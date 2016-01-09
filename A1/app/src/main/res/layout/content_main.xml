@@ -9,24 +9,18 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
+    <TextView android:text="Click the button to vibrate. The device vibrates until the button is clicked." android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
+        android:id="@+id/vibbut"
         android:layout_marginTop="60dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/favicon" />
+        android:src="@drawable/buttonsvibrate" />
 
 </RelativeLayout>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:state_pressed="true"
-    android:drawable="@drawable/button_pressed" /> <!-- pressed -->
-<item android:state_focused="true"
-    android:drawable="@drawable/button_focused" /> <!-- focused -->
-<item android:drawable="@drawable/button_normal" /> <!-- default -->
-</selector>
+
